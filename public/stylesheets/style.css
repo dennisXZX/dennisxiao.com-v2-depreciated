@@ -77,9 +77,10 @@ h3 {
       border-radius: 50%;
       margin-top: 50px; }
     .section-home .profile #introduction {
+      display: block;
       color: white;
       font-weight: 300;
-      font-size: 150%;
+      font-size: 300%;
       text-shadow: 2px 1px 8px rgba(156, 162, 173, 0.8); }
   .section-home .message {
     font-weight: 300;
@@ -147,10 +148,8 @@ h3 {
     margin-bottom: 20px;
     padding: 0px 0px 20px 20px;
     border-left: 2px solid #de8181; }
-  .section-project .project-group {
-    margin-bottom: 35px; }
-    .section-project .project-group img {
-      width: 100%; }
+  .section-project .project-group img {
+    width: 100%; }
   .section-project .project-group:last-child {
     margin-bottom: 0; }
   .section-project .project_text {
@@ -160,14 +159,15 @@ h3 {
     color: #65717a;
     padding-top: 15px; }
     .section-project .project_text .project_link {
-      margin-top: 20px; }
+      margin: 20px 0 30px 0; }
     .section-project .project_text .project_link a {
       transition: background-color 0.8s ease;
       padding: 5px 15px 5px 10px;
       margin: 25px 10px 5px 0px;
       border: 1px solid #676464; }
     .section-project .project_text .project_link a:hover {
-      background-color: #d6dde2; }
+      background-color: cornflowerblue;
+      color: #fff; }
     .section-project .project_text .project_link a {
       text-decoration: none;
       color: inherit; }
@@ -180,7 +180,7 @@ h3 {
   opacity: 0.8;
   background: white;
   color: #65717a;
-  padding: 20px 0;
+  padding: 20px;
   margin-top: 50px; }
   .section-contact .social {
     margin-top: 15px; }

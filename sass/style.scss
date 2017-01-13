@@ -92,9 +92,10 @@ h3 {
             margin-top: 50px;
         }      
         #introduction {
+            display: block;
             color: white;
             font-weight: 300;
-            font-size: 150%;
+            font-size: 300%;
             text-shadow: 2px 1px 8px rgba(156, 162, 173, 0.8);
         }                           
     }
@@ -178,7 +179,6 @@ h3 {
         border-left: 2px solid #de8181;
     }    
     .project-group {
-        margin-bottom: 35px;
         img {
             width: 100%;
         }        
@@ -193,8 +193,8 @@ h3 {
         color: #65717a;
         padding-top: 15px;
         .project_link {
-            margin-top: 20px;
-        }
+            margin: 20px 0 30px 0;
+        } 
         .project_link a {
             transition: background-color 0.8s ease;
             padding: 5px 15px 5px 10px;
@@ -202,7 +202,8 @@ h3 {
             border: 1px solid #676464;
         }
         .project_link a:hover {
-            background-color: #d6dde2
+            background-color: cornflowerblue;
+            color: #fff;
         }
         .project_link a {
             text-decoration: none;
@@ -219,7 +220,7 @@ h3 {
     opacity: 0.8;
     background: white;
     color: #65717a;    
-    padding: 20px 0;
+    padding: 20px;
     margin-top: 50px;
     .social {
         margin-top: 15px;
