@@ -23,7 +23,6 @@ body {
 h3 {
     font-size: 250%;
     font-weight: 300;
-    text-transform: uppercase;
     margin-bottom: 25px;
 }
 
@@ -55,6 +54,11 @@ h3 {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
     background-color: transparent;
+}
+
+.col-md-6 {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /*
@@ -89,8 +93,17 @@ h3 {
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            margin-top: 50px;
-        }      
+            margin: 50px auto 0 auto;
+            display: block;
+            background: url('../images/dennisxiao.jpeg');
+            background-size: cover;
+        }
+        .avatar:hover {
+            background-image: url('../images/dennisxiao-sunglass.jpeg');
+            -webkit-box-shadow: 0px 0px 28px 4px rgba(255,255,255,1);
+            -moz-box-shadow: 0px 0px 28px 4px rgba(255,255,255,1);
+            box-shadow: 0px 0px 28px 4px rgba(255,255,255,1);         
+        }   
         #introduction {
             display: block;
             color: white;
@@ -193,7 +206,7 @@ h3 {
         color: #65717a;
         padding-top: 15px;
         .project_link {
-            margin: 20px 0 30px 0;
+            margin: 20px 0 40px 0;
         } 
         .project_link a {
             transition: background-color 0.8s ease;

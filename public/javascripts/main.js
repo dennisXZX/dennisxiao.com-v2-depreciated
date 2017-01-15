@@ -1,37 +1,16 @@
-var $animation_elements = $('.animation-element');
-// var $animation_navbar = $('')
-var $window = $(window);
-$window.on('scroll', check_if_in_view);
-$window.trigger('scroll');
-
-function check_if_in_view() {
-    var window_height = $window.height();
-    var window_top_position = $window.scrollTop();
-    var window_bottom_position = (window_top_position + window_height);
-
-    $.each($animation_elements, function() {
-        var $element = $(this);
-        var element_height = $element.outerHeight();
-        var element_top_position = $element.offset().top;
-        var element_bottom_position = (element_top_position + element_height);
-
-        //check to see if this current container is within viewport
-        if ((element_bottom_position >= window_top_position) &&
-            (element_top_position <= window_bottom_position)) {
-            // console.log('inview')
-            $element.addClass('in-view');
-        } else {
-          // deleted the class to make the slider again
-        }
-    });
-}
-
-
 $(function() {
+
+    // an Easter egg
+	$(".avatar").click(function() {
+		$("body").addClass("animated wobble").delay(3000).queue(function(){
+			$(this).removeClass("animated wobble");
+			$(this).dequeue();
+		}); 
+	});    
 
     // above-the-fold typing animation
     $("#introduction").typed({
-        strings: [" Hi, I'm Dennis Xiao. <br> <span style='font-size:30px;'> I'm a full-stack web developer living in Australia.<span> " ],
+        strings: [" Hi, I'm Dennis Xiao. <br> <span style='font-size:30px;'> I'm a full-stack web developer living in Sydney.<span> " ],
         typeSpeed: -5,
         showCursor: false
     });
@@ -56,18 +35,14 @@ $(function() {
         return false;
     });
 
-  //scroll to top (not set yet)
-  $('.scrollTop a').scrollTop();
+    // slider picture
+    $('.my-slider').unslider({
+        keys: false
+    });
 
-// slider picture
-  $('.my-slider').unslider({
-    // autoplay: true,
-     keys: false
-});
-
-//wow animation
-new WOW().init();
-
-
+    //wow animation
+    new WOW().init();
 
 });
+
+
