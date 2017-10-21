@@ -10,15 +10,10 @@ $(function() {
 
     // above-the-fold typing animation
     $("#introduction").typed({
-        strings: [" Hi, I'm Dennis Xiao. <br> <span style='font-size:30px;'> I'm a passionate front-end developer living in Sydney.<span> " ],
+        strings: [" Hi, I'm Dennis Xiao <br> <span style='font-size:30px;'> A passionate full-stack developer living in Sydney<span> " ],
         typeSpeed: -5,
         showCursor: false
     });
-
-    // fade in message
-    setTimeout(function(){
-        $(".message").css('visibility', 'visible').hide().fadeIn(1500)
-    }, 1000);
 
     // smooth scroll
     $('.page-scroll').click(function(){

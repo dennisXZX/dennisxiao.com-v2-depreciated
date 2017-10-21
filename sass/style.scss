@@ -105,6 +105,7 @@ h3 {
             box-shadow: 0px 0px 28px 4px rgba(255,255,255,1);         
         }   
         #introduction {
+            margin-top: 25px;
             display: block;
             color: white;
             font-weight: 300;
@@ -112,16 +113,6 @@ h3 {
             text-shadow: 2px 1px 8px rgba(156, 162, 173, 0.8);
         }                           
     }
-    .message {
-        font-weight: 300;
-        visibility: hidden;
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        color: white;
-    }    
 }
 
 /*
