@@ -10,7 +10,7 @@ $(function() {
 
     // above-the-fold typing animation
     $("#introduction").typed({
-        strings: [" Hi, I'm Dennis Xiao <br> <span style='font-size:30px;'> A passionate full-stack developer living in Sydney<span> " ],
+        strings: [" Hi, I'm Dennis Xiao <br> <span style='font-size:30px;'> A passionate front-end developer living in Sydney<span> " ],
         typeSpeed: -5,
         showCursor: false
     });
